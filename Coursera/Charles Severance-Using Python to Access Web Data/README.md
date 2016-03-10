@@ -125,17 +125,16 @@ The following notes are my learning experience of taking this course:
   - #### Part 2: XML Tree Structure
     The above structure is so called "Tree Structure". Thus, Python has its build-in library for XML - Parsing.  
     For example:
-    >    ```
-    >           ...
-    >			import xml.etree.ElementTree as ET
-    >			...
-    >			...
-    >				uh = urllib.request.urlopen(url_actual)
-    >			data = uh.read()
-    >			tree = ET.fromstring(data)
-    >			counts = tree.findall('.//count')
-    >			...
-    >   ```
+    
+        ...
+    	import xml.etree.ElementTree as ET
+    	...
+    	...
+    		uh = urllib.request.urlopen(url_actual)
+    	data = uh.read()
+    	tree = ET.fromstring(data)
+    	counts = tree.findall('.//count')
+    	...
     Then the " counts " will be a type " list" in Python.
 
 ## Week 6
@@ -145,32 +144,32 @@ The following notes are my learning experience of taking this course:
     It has types " array " (list in Python), " dictionary " (hashmap in JAVA).  
 	And it's also the built-in library in Python.  
     For example:
-    > ``` 
-    >   ...
-    >	import json
-    >	...
-    >		uh = urllib.request.urlopen(url_actual)
-    >	data = uh.read()
-    >
-    >	# since the data retrieved from above url contains char 'b' in the prefix,
-    >	# the json treat it as a byte string, so it need to be decode by 'UTF-8'
-    >		info = json.loads(data.decode('utf-8'))
-    >		...
-    >		for item in info['comments']:
-    >		    total += item['count']
-    >		...
-    >   ```
+    
+        ...
+    	import json
+	    ...
+    		uh = urllib.request.urlopen(url_actual)
+    	data = uh.read()
+    
+    	# since the data retrieved from above url contains char 'b' in the prefix,
+    	# the json treat it as a byte string, so it need to be decode by 'UTF-8'
+    		info = json.loads(data.decode('utf-8'))
+    		...
+    		for item in info['comments']:
+    		    total += item['count']
+		...
+    
     Another example:
-	> ```...
-	>	import json
-	>	...
-	>	    uh = urllib.request.urlopen(url)
-	>	    data = uh.read()
-	>	    ...
-	>	    js = json.loads(data.decode('utf-8'))
-	>	    # print (json.dumps(js, indent=4))
-	>	    place_id = js["results"][0]['place_id']
-	 >   ...
-    > ```
+	    
+	    ...
+		import json
+    	...
+		    uh = urllib.request.urlopen(url)
+		    data = uh.read()
+		    ...
+		    js = json.loads(data.decode('utf-8'))
+		    # print (json.dumps(js, indent=4))
+		    place_id = js["results"][0]['place_id']
+	    ...
 
 # Thank you for reading :)
