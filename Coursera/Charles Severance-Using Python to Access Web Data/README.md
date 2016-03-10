@@ -5,7 +5,7 @@ The following notes are my learning experience of taking this course:
 ## Week 2
   -  Part 1: Regular Expression Quick Guide
 
-    >        ^	        Matches the beginning of a line
+    >       ^	        Matches the beginning of a line
     >    	$	        Matches the end of the line
     >    	.           Matches any character
     >    	\s	        Matches whitespace
@@ -22,8 +22,7 @@ The following notes are my learning experience of taking this course:
     
 ## Week 3
   - #### Part 1: Difference between using "urllib" by Python 2.x and Python 3.x
-    > Python 2.x use " urllib " to operate on the URls directly.
-    
+    Python 2.x use " urllib " to operate on the URls directly.  
     For example:
     > ```urlhand = urllib.urlopen(```http://www.pythonlearn.com/code/intro-short.txt```)```
     
