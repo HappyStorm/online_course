@@ -4,7 +4,7 @@ The webpage use several languages and formats to communicate with the appliecati
 The following notes are my learning experience of taking this course:
 ## Week 2
   -  Part 1: Regular Expression Quick Guide
-
+    > ```
     >        ^	        Matches the beginning of a line
     >    	$	        Matches the end of the line
     >    	.           Matches any character
@@ -19,7 +19,7 @@ The following notes are my learning experience of taking this course:
     >    	[a-z0-9]    The set of characters can include a range
     >    	(   	    Indicates where string extraction is to start
     >    	)	        Indicates where string extraction is to end
-
+    > ```
 ## Week 3
   - #### Part 1: Difference between using "urllib" by Python 2.x and Python 3.x
     > Python 2.x use " urllib " to operate on the URls directly.
