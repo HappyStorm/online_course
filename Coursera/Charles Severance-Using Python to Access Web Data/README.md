@@ -34,16 +34,15 @@ The following notes are my learning experience of taking this course:
     Python 3.x use " urllib.x " to operate on different usage of the URLs.  
     For example:  
     if you want to open the url, then you should type  
-    ```
+    
         import urllib.request  
-        urlhand = urllib.urlopen([http://www.pythonlearn.com/code/intro-short.txt](http://www.pythonlearn.com/code/intro-short.txt))
-    ```
+        urlhand = urllib.urlopen(http://www.pythonlearn.com/code/intro-short.txt)
     
     else if you want to encode the url, then you need to type  
-    ``` 
+        
         import urllib.parse  
         url = serviceurl + urllib.parse.urlencode({'sensor':'false', 'address': address}))
-    ```
+        
 	
 	And these are the small part of the differences between Python 2.x and Python 3.x
 ## Week 4
