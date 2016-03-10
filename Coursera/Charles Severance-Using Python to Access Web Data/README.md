@@ -49,13 +49,12 @@ The following notes are my learning experience of taking this course:
   - #### Part 1: HTML Retrieving
     HTTP protocol includes several tags, e.g., 
 
-    ```
         <h1>......</h1,>
         <a href="......" </a>
         <p>......</p>
-    ```
+    
     And the following flow diagram is the cycle between the clien and server :
-    		  
+    
     		      GET
                -------->
 	    Client 			 Server
@@ -66,38 +65,39 @@ The following notes are my learning experience of taking this course:
     There exists a powerful and beautiful library which can help you parsing the HTML format, it   
     called "BeautifulSoup"  
     For example:  
-    > ```
-    >   ...
-	>	from bs4 import BeautifulSoup
-    >
-	>	url = input('Enter - ')
-	>	html = urllib.request.urlopen(url).read()
-	>	soup = BeautifulSoup(html)
-    >
-	>	# Retrieve all of the anchor tags
-	>	tags = soup('span')
-	>	...
-	>	for tag in tags :
-	>	    ...
-	>	    # print ('TAG:', tag)
-	>	    # print ('URL:', tag.get('href', None))
-	>	    # print ('Contents:', tag.contents[0])
-	>	    # print ('Attrs:', tag.attrs)
-	>	...
-    > ```
+    
+        ...
+		from bs4 import BeautifulSoup
+    
+		url = input('Enter - ')
+		html = urllib.request.urlopen(url).read()
+		soup = BeautifulSoup(html)
+    
+		# Retrieve all of the anchor tags
+		tags = soup('span')
+		...
+		for tag in tags :
+		    ...
+		    # print ('TAG:', tag)
+		    # print ('URL:', tag.get('href', None))
+		    # print ('Contents:', tag.contents[0])
+		    # print ('Attrs:', tag.attrs)
+		...
+    
+    
     Another example:
-    > ```
-    >    ...
-	>	from bs4 import *
-	>	...
-    >
-	>	...
-	>		html = urllib.request.urlopen(url).read()
-	>		soup = BeautifulSoup(html, 'lxml')
-	>		tags = soup('a')
-	>		url = tags[2].get('href', None)
-	>	...
-    > ```
+    
+        ...
+		from bs4 import *
+		...
+    
+		...
+			html = urllib.request.urlopen(url).read()
+			soup = BeautifulSoup(html, 'lxml')
+			tags = soup('a')
+			url = tags[2].get('href', None)
+		...
+
 
 ## Week 5
   - #### Part 1: XML
