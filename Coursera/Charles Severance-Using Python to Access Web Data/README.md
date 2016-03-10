@@ -39,7 +39,7 @@ The following notes are my learning experience of taking this course:
     
     else if you want to encode the url, then you need to type  
     ``` import urllib.parse
-    ```url = serviceurl + urllib.parse.urlencode({'sensor':'false', 'address': address}))```
+        url = serviceurl + urllib.parse.urlencode({'sensor':'false', 'address': address}))```
 	
 	And these are the small part of the differences between Python 2.x and Python 3.x
 ## Week 4
