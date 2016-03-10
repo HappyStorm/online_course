@@ -4,6 +4,7 @@ The webpage use several languages and formats to communicate with the appliecati
 The following notes are my learning experience of taking this course:
 ## Week 2
   -  Part 1: Regular Expression Quick Guide
+
     >        ^	        Matches the beginning of a line
     >    	$	        Matches the end of the line
     >    	.           Matches any character
