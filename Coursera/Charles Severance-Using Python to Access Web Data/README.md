@@ -25,18 +25,18 @@ The following notes are my learning experience of taking this course:
     Python 2.x use " urllib " to operate on the URls directly.  
     For example:
 
-    > ```urlhand = urllib.urlopen(```http://www.pythonlearn.com/code/intro-short.txt```)```
+    > ```urlhand = urllib.urlopen(``` http://www.pythonlearn.com/code/intro-short.txt ```)```
     
      then you could get sth like the file handler
     
     ---
     
-    > Python 3.x use " urllib.x " to operate on different usage of the URLs.
+    Python 3.x use " urllib.x " to operate on different usage of the URLs.
 
     For example:  
     if you want to open the url, then you should type
     > ``` import urllib.request ```  
-    > ```urlhand = urllib.urlopen(```http://www.pythonlearn.com/code/intro-short.txt```)```
+    > ```urlhand = urllib.urlopen(```http://www.pythonlearn.com/code/intro-short.txt ```)```
     
     else if you want to encode the url, then you need to type
     > ``` import urllib.parse ```  
@@ -58,6 +58,7 @@ The following notes are my learning experience of taking this course:
 	    Client 			 Server
 		       <--------
 		          HTML
+    
   - #### Part 2: BeautifulSoup
     There exists a powerful and beautiful library which can help you parsing the HTML format, it   
     called "BeautifulSoup"  
