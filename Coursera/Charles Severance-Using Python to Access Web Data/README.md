@@ -24,7 +24,7 @@ The following notes are my learning experience of taking this course:
   - #### Part 1: Difference between using "urllib" by Python 2.x and Python 3.x
     Python 2.x use " urllib " to operate on the URls directly.  
     For example:
-    > ```urlhand = urllib.urlopen(```http://www.pythonlearn.com/code/intro-short.txt```)```
+    ```urlhand = urllib.urlopen(```http://www.pythonlearn.com/code/intro-short.txt)```
     
      then you could get sth like the file handler
     
