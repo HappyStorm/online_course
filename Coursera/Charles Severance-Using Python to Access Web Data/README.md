@@ -38,18 +38,21 @@ The following notes are my learning experience of taking this course:
     ```urlhand = urllib.urlopen(```http://www.pythonlearn.com/code/intro-short.txt ```)```
     
     else if you want to encode the url, then you need to type  
-    ``` import urllib.parse ```  
-    ``` url = serviceurl + urllib.parse.urlencode({'sensor':'false', 'address': address}))```
+    ``` 
+        import urllib.parse  
+        url = serviceurl + urllib.parse.urlencode({'sensor':'false', 'address': address}))
+    ```
 	
 	And these are the small part of the differences between Python 2.x and Python 3.x
 ## Week 4
   - #### Part 1: HTML Retrieving
     HTTP protocol includes several tags, e.g., 
 
+    ```
         <h1>......</h1,>
         <a href="......" </a>
         <p>......</p>
-
+    ```
     And the following flow diagram is the cycle between the clien and server :
     		  
     		      GET
